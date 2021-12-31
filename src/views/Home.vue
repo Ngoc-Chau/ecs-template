@@ -62,7 +62,7 @@
       </div>
     </nav>
 
-    <div class="main">
+    <div class="main">  
 		<div class="" style="position: fixed; width: 1650px; z-index: 999;">
 			<nav class="navbar navbar-expand navbar-light navbar-bg border-bottom">
 				<a class="sidebar-toggle js-sidebar-toggle">
@@ -159,30 +159,34 @@
       <main class="content">
 				<div class="container-fluid p-0">
           <div class="row">
+            <div class="text-center head-title">
               <h1 class="h3 mb-3" style="font-size: 40px">Danh sach cho ngoi Fabbi</h1>
-            <div class="col-sm-10">
-            </div>
-            <div class="col-sm-2">
-              <a
-                class="nav-link dropdown-toggle d-none d-sm-inline-block"
-                data-bs-toggle="dropdown" style="border: 1px solid; color:duck"
-              >
-                <span class="text-dark">Tang 17</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-end">
-                <a class="dropdown-item" href="#">Tang 11</a>
-                <a class="dropdown-item" href="#">Tang 13</a>
-                <a class="dropdown-item" href="#">Tang 14</a>
-                <a class="dropdown-item" href="#">Tang 15</a>
-                <a class="dropdown-item" href="#">Tang 17</a>
+              <div class="step">
+                <a
+                  class="nav-link dropdown-toggle d-none d-sm-inline-block"
+                  data-bs-toggle="dropdown" style="border: 1px solid; color:duck"
+                >
+                  <span class="text-dark">Tang 17</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <a class="dropdown-item" href="#">Tang 11</a>
+                  <a class="dropdown-item" href="#">Tang 13</a>
+                  <a class="dropdown-item" href="#">Tang 14</a>
+                  <a class="dropdown-item" href="#">Tang 15</a>
+                  <a class="dropdown-item" href="#">Tang 17</a>
+                </div>
               </div>
             </div>
           </div>
-          
 					<div class="row mt-4">
 						<div class="col-sm-6 set-table">
 							<div class="d-flex justify-content-center">
-                <div class="col-sm-3 seat">
+                <div class="col-sm-3 seat tool-tip">
+                  <span class="tooltiptext">
+                    <p>ID: 444</p>
+                    <p>Ho va ten: Nguyen thi thu minh</p>
+                    <p>Email: minhntt@fabbi.io</p>
+                  </span>
                   <p><i class="check" data-feather="check"></i></p>
                   <p>nguyet NTM - HRM</p>
                   <p> 1</p>
@@ -326,7 +330,9 @@
               </div>
 						</div>
 					</div>
-
+<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip">
+            <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+          </span>
 				</div>
 			</main>
 
@@ -385,13 +391,22 @@ export default {
     margin-top: 8em;
   }
 
+  .head-title {
+    position: relative;
+  }
+  .step {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .seat {
     border: 2px solid;
     margin: 10px;
-    height: 120px;
-    /* font-size: 20px; */
     line-height: 15px;
     font-weight: bolder;
+  }
+  .seat:hover {
+    background: #1ea11a;
   }
   .check {
     margin-top: 10px;
@@ -399,4 +414,31 @@ export default {
   .set-table {
     margin: 2em 0;
   }
+
+  .tool-tip {
+  position: relative;
+  display: inline-block;
+}
+
+.tool-tip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 0%;
+  margin-left: -60px;
+}
+
+.tool-tip:hover .tooltiptext {
+  visibility: visible;
+}
 </style>
