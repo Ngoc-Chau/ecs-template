@@ -18,28 +18,39 @@
                 >
                   <span class="text-dark">Tang 11</span>
                 </a>
-                <div class="dropdown-menu dropdown-menu-end">
+                <div
+                  class="dropdown-menu dropdown-menu-end"
+                  style="text-align: center"
+                >
                   <a class="dropdown-item active" href="/tang11">Tang 11</a>
-                  <a class="dropdown-item" href="#">Tang 13</a>
+                  <a class="dropdown-item" href="/tang13">Tang 13</a>
                   <a class="dropdown-item" href="#">Tang 14</a>
                   <a class="dropdown-item" href="#">Tang 15</a>
-                  <a class="dropdown-item" href="#">Tang 17</a>
+                  <a class="dropdown-item" href="/">Tang 17</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mt-4">
-            <div class="col-sm-12">
-              <div class="justify-content-center">
+
+          <div v-if="success" class="row mt-4">
+            <h4 style="text-align: right; padding-right: 77px;"><i class="fa fa-user-plus"></i> Them moi thanh cong ...</h4>
+          </div>
+          <div v-if="success" class="row mt-4">
+            <h4 style="text-align: right; padding-right: 77px;"><i class="fa fa-trash-o"></i> Xoa thanh cong ...</h4>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-sm-12 set-table">
+              <div class="d-flex justify-content-center">
                 <div class="stage">
                   <h2>SAN KHAU</h2>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mt-4">
+          <div class="row">
             <!-- left ----------------------------------------------------------------------------------------------------------- -->
-            <div class="col-sm-4 set-table">
+            <div class="col-sm-4">
               <div class="mt-4">
                 <div class="d-flex justify-content-center">
                   <div class="pantry-1">
@@ -96,23 +107,23 @@
                 </div>
               </div>
             </div>
-            
+
             <!-- center ----------------------------------------------------------------------------------------------------------- -->
-            <div class="col-sm-4 set-table">
+            <div class="col-sm-4">
               <div class="py-4">
                 <div class="d-flex justify-content-center">
                   <div class="seat tool-tip">
                     <span class="tooltiptext">
                       <div class="d-flex tooltip-head" style="padding: 5px 0">
-                        <a href="">
-                          <i class="" data-feather="trash-2"></i>
+                        <a href="" data-toggle="modal" data-target="#delUser">
+                          <i class="fa fa-trash-o"></i>
                         </a>
                         <a href="">
-                          <i class="" data-feather="repeat"></i>
+                          <i class="fa fa-refresh"></i>
                         </a>
                         <span style="margin: 0 35px 0 35px">Thong tin</span>
                         <a href="">
-                          <i class="" data-feather="x"></i>
+                          <i class="fa fa-close"></i>
                         </a>
                       </div>
                       <div class="toolborder">
@@ -123,7 +134,7 @@
                         <p>Chuc vu: nhan vien</p>
                       </div>
                     </span>
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>nguyet NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -131,14 +142,14 @@
                     <span class="tooltiptext">
                       <div class="d-flex tooltip-head" style="padding: 5px 0">
                         <a href="">
-                          <i class="" data-feather="trash-2"></i>
+                          <i class="fa fa-trash-o"></i>
                         </a>
                         <a href="">
-                          <i class="" data-feather="repeat"></i>
+                          <i class="fa fa-refresh"></i>
                         </a>
                         <span style="margin: 0 35px 0 35px">Thong tin</span>
                         <a href="">
-                          <i class="" data-feather="x"></i>
+                          <i class="fa fa-close"></i>
                         </a>
                       </div>
                       <div class="toolborder">
@@ -149,7 +160,7 @@
                         <p>Chuc vu: nhan vien</p>
                       </div>
                     </span>
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>khanh NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -157,14 +168,14 @@
                     <span class="tooltiptext">
                       <div class="d-flex tooltip-head" style="padding: 5px 0">
                         <a href="">
-                          <i class="" data-feather="trash-2"></i>
+                          <i class="fa fa-trash-o"></i>
                         </a>
                         <a href="">
-                          <i class="" data-feather="repeat"></i>
+                          <i class="fa fa-refresh"></i>
                         </a>
                         <span style="margin: 0 35px 0 35px">Thong tin</span>
                         <a href="">
-                          <i class="" data-feather="x"></i>
+                          <i class="fa fa-close"></i>
                         </a>
                       </div>
                       <div class="toolborder">
@@ -175,7 +186,7 @@
                         <p>Chuc vu: nhan vien</p>
                       </div>
                     </span>
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>khanh NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -183,14 +194,14 @@
                     <span class="tooltiptext">
                       <div class="d-flex tooltip-head" style="padding: 5px 0">
                         <a href="">
-                          <i class="" data-feather="trash-2"></i>
+                          <i class="fa fa-trash-o"></i>
                         </a>
                         <a href="">
-                          <i class="" data-feather="repeat"></i>
+                          <i class="fa fa-refresh"></i>
                         </a>
                         <span style="margin: 0 35px 0 35px">Thong tin</span>
                         <a href="">
-                          <i class="" data-feather="x"></i>
+                          <i class="fa fa-close"></i>
                         </a>
                       </div>
                       <div class="toolborder">
@@ -201,75 +212,29 @@
                         <p>Chuc vu: nhan vien</p>
                       </div>
                     </span>
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>hung NTM - HRM</p>
                     <p>1</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -278,90 +243,44 @@
               <div class="py-4">
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -370,90 +289,44 @@
               <div class="py-4">
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -462,44 +335,44 @@
               <div class="py-4">
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -508,44 +381,182 @@
               <div class="py-4">
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                </div>
+              </div>
+              <div class="py-4">
+                <div class="d-flex justify-content-center">
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                </div>
+              </div>
+              <div class="py-4">
+                <div class="d-flex justify-content-center">
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                </div>
+              </div>
+              <div class="py-4">
+                <div class="d-flex justify-content-center">
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -554,38 +565,45 @@
             </div>
 
             <!-- right --------------------------------------------------------------------------------------- -->
-            <div class="col-sm-4 set-table">
+            <div class="col-sm-4">
               <div class="py-4">
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
+                    <p>
+                      <a
+                        data-toggle="modal"
+                        data-target="#addSeat"
+                        data-whatever="@mdo"
+                        ><i class="check fa fa-close"></i
+                      ></a>
+                    </p>
+                    <p></p>
+                    <p>22</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -594,34 +612,34 @@
               <div class="py-4">
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -630,34 +648,34 @@
               <div class="py-4">
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -680,70 +698,34 @@
               <div class="py-4">
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -752,34 +734,70 @@
               <div class="py-4">
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
                   <div class="seat">
-                    <p><i class="check" data-feather="check"></i></p>
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                </div>
+              </div>
+              <div class="py-4">
+                <div class="d-flex justify-content-center">
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
+                    <p>Hungng NTM - HRM</p>
+                    <p>1</p>
+                  </div>
+                  <div class="seat">
+                    <p><i class="check fa fa-check"></i></p>
                     <p>Hungng NTM - HRM</p>
                     <p>1</p>
                   </div>
@@ -787,6 +805,127 @@
               </div>
             </div>
           </div>
+          <!-- modal add ---------------------------------------------------------------------------- -->
+          <div class="modal fade" id="addSeat" tabindex="-1" role="dialog" aria-labelledby="addUserSeat" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="addUserSeat">Them thanh vien</h3>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row" style="padding: 15px">
+                    <div class="list-user">
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">thang ND - D2</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">Hung BB - D1</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">Nguyen NVH - RHM</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">thang ND - D2</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">Hung BB - D1</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">Nguyen NVH - RHM</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">thang ND - D2</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">Hung BB - D1</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">Nguyen NVH - RHM</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">thang ND - D2</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">Hung BB - D1</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                      <div class="d-flex py-2">
+                        <div class="col-sm-9 add-user">Nguyen NVH - RHM</div>
+                        <div class="col-sm-3">
+                          <button type="button" class="btn btn-outline-dark">ADD</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end add -------------------------------------------------------------------------- -->
+
+          <!-- modal del seat ---------------------------------------------------------------------------- -->
+          <div class="modal fade" id="delUser" tabindex="-1" role="dialog" aria-labelledby="delSeatUser" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content" style="width: 60%; margin: 130px auto;">
+                <div class="modal-body">
+                  <div class="row">
+                    <h3 class="mb-4">Canh bao</h3>
+                    <p class="mt-4">Ban co chac chan muon xoa khong</p>
+                  </div>
+                </div>
+                <div class="modal-footer" style="padding: 0;">
+                    <div class="col-sm-6" style="border-right: 1px solid #dee2e6; padding: 1em 0;">
+                      <a class="message-del">YES</a>
+                    </div>
+                    <div class="col-sm-6" style="padding: 1em 0;">
+                      <a class="message-del" data-dismiss="modal" aria-label="Close">No</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end add -------------------------------------------------------------------------- -->
+
         </div>
       </main>
 
@@ -884,10 +1023,10 @@ export default {
 
 /* right */
 .cabinet {
-  border:  2px solid;
+  border: 2px solid;
   width: 74%;
   height: 214px;
-  margin:  10px;
+  margin: 10px;
   padding: 90px 0;
   background: #7fd178;
 }
@@ -933,6 +1072,29 @@ export default {
 .stage {
   border: 2px solid;
   height: 200px;
-  width: 80%;
+  width: 92%;
+  padding: 80px 0;
+  background: #faffba;
+}
+
+.list-user {
+  height: 370px;
+  overflow-y: scroll;
+  border: 2px solid;
+  padding: 10px;
+}
+.add-user {
+  border: 2px solid;
+  margin-left: 10px;
+  text-align: left;
+  line-height: 30px;
+}
+.message-del {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
 }
 </style>
