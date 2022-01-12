@@ -32,903 +32,557 @@
             </div>
           </div>
 
+          <!-- start message ----------------------------------------------------------------------------- -->
           <div v-if="success" class="row mt-4">
-            <h4 style="text-align: right; padding-right: 77px;"><i class="fa fa-user-plus"></i> Them moi thanh cong ...</h4>
+            <h4 style="text-align: right; padding-right: 77px">
+              <i class="fa fa-user-plus"></i> Them moi thanh cong ...
+            </h4>
           </div>
           <div v-if="success" class="row mt-4">
-            <h4 style="text-align: right; padding-right: 77px;"><i class="fa fa-trash-o"></i> Xoa thanh cong ...</h4>
+            <h4 style="text-align: right; padding-right: 77px">
+              <i class="fa fa-trash-o"></i> Xoa thanh cong ...
+            </h4>
           </div>
-
-          <div class="row mt-2">
-            <div class="col-sm-12 set-table">
-              <div class="d-flex justify-content-center">
-                <div class="stage">
-                  <h2>SAN KHAU</h2>
-                </div>
-              </div>
-            </div>
+          <div v-if="success" class="row mt-4">
+            <h4 style="text-align: right; padding-right: 77px">
+              <i class="fa fa-check-circle-o"></i> Chuyen thanh cong ...
+            </h4>
           </div>
+          <!-- end mesage ------------------------------------------------------------------------------------- -->
           <div class="row">
-            <!-- left ----------------------------------------------------------------------------------------------------------- -->
-            <div class="col-sm-4">
-              <div class="mt-4">
-                <div class="d-flex justify-content-center">
-                  <div class="pantry-1">
-                    <h2>PANTRY 1</h2>
+            <div class="" :class="{ 'col-sm-8': addActive }">
+              <div class="row mt-2">
+                <div class="col-sm-12 set-table">
+                  <div class="d-flex justify-content-center">
+                    <div class="stage">
+                      <h3>SAN KHAU</h3>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="mb-4">
-                <div class="d-flex justify-content-center">
-                  <div class="phone-booth">
-                    <h2>PHONE BOOTH</h2>
+              <div class="row">
+                <!-- left ----------------------------------------------------------------------------------------------------------- -->
+                <div class="col-sm-4">
+                  <div class="mt-4">
+                    <div class="d-flex justify-content-center">
+                      <div class="pantry-1">
+                        <h3>PANTRY 1</h3>
+                      </div>
+                    </div>
                   </div>
-                  <div class="phone-booth">
-                    <h2>PHONE BOOTH</h2>
+                  <div class="mb-4">
+                    <div class="d-flex justify-content-center">
+                      <div class="phone-booth">
+                        <h3>PHONE BOOTH</h3>
+                      </div>
+                      <div class="phone-booth">
+                        <h3>PHONE BOOTH</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-4">
+                    <div class="d-flex justify-content-center">
+                      <div class="phone-booth">
+                        <h3>PHONE BOOTH</h3>
+                      </div>
+                      <div class="phone-booth">
+                        <h3>PHONE BOOTH</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="d-flex justify-content-center">
+                      <div class="meeting static">
+                        <h3>PHONG HOP TINH</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="d-flex justify-content-center">
+                      <div class="meeting heat">
+                        <h3>PHONG HOP NHIET</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="d-flex justify-content-center">
+                      <div class="serve">
+                        <h3>SERVE</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="d-flex justify-content-center">
+                      <div class="serve">
+                        <h2>KHO</h2>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="pt-4">
-                <div class="d-flex justify-content-center">
-                  <div class="phone-booth">
-                    <h2>PHONE BOOTH</h2>
-                  </div>
-                  <div class="phone-booth">
-                    <h2>PHONE BOOTH</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="d-flex justify-content-center">
-                  <div class="meeting static">
-                    <h2>PHONG HOP TINH</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="d-flex justify-content-center">
-                  <div class="meeting heat">
-                    <h2>PHONG HOP NHIET</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="d-flex justify-content-center">
-                  <div class="serve">
-                    <h2>SERVE</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="d-flex justify-content-center">
-                  <div class="serve">
-                    <h2>KHO</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <!-- center ----------------------------------------------------------------------------------------------------------- -->
-            <div class="col-sm-4">
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat tool-tip">
-                    <span class="tooltiptext">
-                      <div class="d-flex tooltip-head" style="padding: 5px 0">
-                        <a href="" data-toggle="modal" data-target="#delUser">
-                          <i class="fa fa-trash-o"></i>
-                        </a>
-                        <a href="">
-                          <i class="fa fa-refresh"></i>
-                        </a>
-                        <span style="margin: 0 35px 0 35px">Thong tin</span>
-                        <a href="">
-                          <i class="fa fa-close"></i>
-                        </a>
-                      </div>
-                      <div class="toolborder">
-                        <p style="text-align: center">ID: 444</p>
-                        <p>Ho va ten: Nguyen thi thu minh</p>
-                        <p>Email: minhntt@fabbi.io</p>
-                        <p>Don vi: D1</p>
-                        <p>Chuc vu: nhan vien</p>
-                      </div>
-                    </span>
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>nguyet NTM - HRM</p>
-                    <p>1</p>
+                <!-- center ----------------------------------------------------------------------------------------------------------- -->
+                <div class="col-sm-4">
+                  <div class="py-4">
+                    <div class="justify-content-center">
+                      <seat
+                        v-for="(blockA, index) in blockAs"
+                        :key ="blockA.id"
+                        :propsBlockA = "blockA"
+                        class="seat tool-tip"
+                        :class="index/8 >= 1 && index%8 <4 ? 'mtop' : ''"
+                        @transfer="transferChange"
+                      />
+                    </div>
                   </div>
-                  <div class="seat tool-tip">
-                    <span class="tooltiptext">
-                      <div class="d-flex tooltip-head" style="padding: 5px 0">
-                        <a href="">
-                          <i class="fa fa-trash-o"></i>
-                        </a>
-                        <a href="">
-                          <i class="fa fa-refresh"></i>
-                        </a>
-                        <span style="margin: 0 35px 0 35px">Thong tin</span>
-                        <a href="">
-                          <i class="fa fa-close"></i>
-                        </a>
-                      </div>
-                      <div class="toolborder">
-                        <p style="text-align: center">ID: 444</p>
-                        <p>Ho va ten: Nguyen thi thu minh</p>
-                        <p>Email: minhntt@fabbi.io</p>
-                        <p>Don vi: D1</p>
-                        <p>Chuc vu: nhan vien</p>
-                      </div>
-                    </span>
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>khanh NTM - HRM</p>
-                    <p>1</p>
+                  <div class="py-4">
+                    <div class="justify-content-center">
+                      <seat
+                        v-for="(blockA, index) in blockAs"
+                        :key ="blockA.id"
+                        :propsBlockA ="blockA"
+                        class="seat tool-tip"
+                        :class="index/8 >= 1 && index%8 <4 ? 'mtop' : ''"
+                        @transfer="transferChange"
+                      />
+                    </div>
                   </div>
-                  <div class="seat tool-tip">
-                    <span class="tooltiptext">
-                      <div class="d-flex tooltip-head" style="padding: 5px 0">
-                        <a href="">
-                          <i class="fa fa-trash-o"></i>
-                        </a>
-                        <a href="">
-                          <i class="fa fa-refresh"></i>
-                        </a>
-                        <span style="margin: 0 35px 0 35px">Thong tin</span>
-                        <a href="">
-                          <i class="fa fa-close"></i>
-                        </a>
-                      </div>
-                      <div class="toolborder">
-                        <p style="text-align: center">ID: 444</p>
-                        <p>Ho va ten: Nguyen thi thu minh</p>
-                        <p>Email: minhntt@fabbi.io</p>
-                        <p>Don vi: D1</p>
-                        <p>Chuc vu: nhan vien</p>
-                      </div>
-                    </span>
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>khanh NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat tool-tip">
-                    <span class="tooltiptext">
-                      <div class="d-flex tooltip-head" style="padding: 5px 0">
-                        <a href="">
-                          <i class="fa fa-trash-o"></i>
-                        </a>
-                        <a href="">
-                          <i class="fa fa-refresh"></i>
-                        </a>
-                        <span style="margin: 0 35px 0 35px">Thong tin</span>
-                        <a href="">
-                          <i class="fa fa-close"></i>
-                        </a>
-                      </div>
-                      <div class="toolborder">
-                        <p style="text-align: center">ID: 444</p>
-                        <p>Ho va ten: Nguyen thi thu minh</p>
-                        <p>Email: minhntt@fabbi.io</p>
-                        <p>Don vi: D1</p>
-                        <p>Chuc vu: nhan vien</p>
-                      </div>
-                    </span>
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>hung NTM - HRM</p>
-                    <p>1</p>
-                  </div>
+                  
                 </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <!-- right --------------------------------------------------------------------------------------- -->
-            <div class="col-sm-4">
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
+                <!-- right --------------------------------------------------------------------------------------- -->
+                <div class="col-sm-4">
+                  <div class="py-4">
+                    <div class="justify-content-center blockB" style="margin: auto; width: 75%;">
+                      <seat
+                        v-for="(blockA, index) in blockBs[0]"
+                        :key ="blockA.id"
+                        :propsBlockA ="blockA"
+                        class="seat tool-tip"
+                        :class="index/6 >= 1 && index%6 <3 ? 'mtop' : ''"
+                        @transfer="transferChange"
+                      />
+                    </div>
                   </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
+                  <!-- tu giay -->
+                  <div class="py-4">
+                    <div class="d-flex justify-content-center">
+                      <div class="cabinet">
+                        <h3>TU GIAY</h3>
+                      </div>
+                    </div>
                   </div>
-                  <div class="seat">
-                    <p>
-                      <a
-                        data-toggle="modal"
-                        data-target="#addSeat"
-                        data-whatever="@mdo"
-                        ><i class="check fa fa-close"></i
-                      ></a>
-                    </p>
-                    <p></p>
-                    <p>22</p>
+                  <div class="py-4">
+                    <div class="d-flex justify-content-center">
+                      <div class="cabinet">
+                        <h3>PANTRY 2</h3>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
+                  <!-- het tu giay -->
+                  <div class="py-4">
+                    <div class="justify-content-center blockB" style="margin: auto; width: 75%">
+                      <seat
+                        v-for="(blockA, index) in blockBs[1]"
+                        :key ="blockA.id"
+                        :propsBlockA ="blockA"
+                        class="seat tool-tip"
+                        :class="index/6 >= 1 && index%6 <3 ? 'mtop' : ''"
+                        @transfer="transferChange"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
+              <!-- modal add ---------------------------------------------------------------------------- -->
+              <div
+                class="modal fade"
+                id="addSeat"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="addUserSeat"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="addUserSeat">
+                        Them thanh vien
+                      </h3>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row" style="padding: 15px">
+                        <div class="list-user">
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">thang ND - D2</div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">Hung BB - D1</div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">
+                              Nguyen NVH - RHM
+                            </div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">thang ND - D2</div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">Hung BB - D1</div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">
+                              Nguyen NVH - RHM
+                            </div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">thang ND - D2</div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">Hung BB - D1</div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">
+                              Nguyen NVH - RHM
+                            </div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">thang ND - D2</div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">Hung BB - D1</div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                          <div class="d-flex py-2">
+                            <div class="col-sm-9 add-user">
+                              Nguyen NVH - RHM
+                            </div>
+                            <div class="col-sm-3">
+                              <button
+                                type="button"
+                                class="btn btn-outline-dark"
+                              >
+                                ADD
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="cabinet">
-                    <h2>TU GIAY</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="cabinet">
-                    <h2>PANTRY 2</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-              <div class="py-4">
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                  <div class="seat">
-                    <p><i class="check fa fa-check"></i></p>
-                    <p>Hungng NTM - HRM</p>
-                    <p>1</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- modal add ---------------------------------------------------------------------------- -->
-          <div class="modal fade" id="addSeat" tabindex="-1" role="dialog" aria-labelledby="addUserSeat" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h3 class="modal-title" id="addUserSeat">Them thanh vien</h3>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
+              <!-- end add -------------------------------------------------------------------------- -->
+
+              <!-- modal del seat ---------------------------------------------------------------------------- -->
+              <div
+                class="modal fade"
+                id="delUser"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="delSeatUser"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div
+                    class="modal-content"
+                    style="width: 60%; margin: 130px auto"
                   >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="row" style="padding: 15px">
-                    <div class="list-user">
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">thang ND - D2</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <h3 class="mb-4">Canh bao</h3>
+                        <p class="mt-4">Ban co chac chan muon xoa khong</p>
                       </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">Hung BB - D1</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer" style="padding: 0">
+                      <div
+                        class="col-sm-6"
+                        style="border-right: 1px solid #dee2e6; padding: 1em 0"
+                      >
+                        <a class="message-del">YES</a>
                       </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">Nguyen NVH - RHM</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
-                      </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">thang ND - D2</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
-                      </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">Hung BB - D1</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
-                      </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">Nguyen NVH - RHM</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
-                      </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">thang ND - D2</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
-                      </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">Hung BB - D1</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
-                      </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">Nguyen NVH - RHM</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
-                      </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">thang ND - D2</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
-                      </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">Hung BB - D1</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
-                      </div>
-                      <div class="d-flex py-2">
-                        <div class="col-sm-9 add-user">Nguyen NVH - RHM</div>
-                        <div class="col-sm-3">
-                          <button type="button" class="btn btn-outline-dark">ADD</button>
-                        </div>
+                      <div class="col-sm-6" style="padding: 1em 0">
+                        <a
+                          class="message-del"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                          >No</a
+                        >
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- end del -------------------------------------------------------------------------- -->
+            
             </div>
-          </div>
-          <!-- end add -------------------------------------------------------------------------- -->
-
-          <!-- modal del seat ---------------------------------------------------------------------------- -->
-          <div class="modal fade" id="delUser" tabindex="-1" role="dialog" aria-labelledby="delSeatUser" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content" style="width: 60%; margin: 130px auto;">
-                <div class="modal-body">
-                  <div class="row">
-                    <h3 class="mb-4">Canh bao</h3>
-                    <p class="mt-4">Ban co chac chan muon xoa khong</p>
+            <div class="col-sm-4" :class="{ blockRight: isActive }">
+              <block-right @outTransfer="outTransfer"
+                @update="newUpdate"
+               />
+              <!-- <div class="row block-transfer">
+                <div class="d-flex">
+                  <div style="flex-grow: 1">
+                    <h4 class="mb-3">Danh sach chuyen cho ngoi tang xx</h4>
+                  </div>
+                  <div>
+                    <a @click="outTransfer"><i class="fa fa-remove"></i></a>
                   </div>
                 </div>
-                <div class="modal-footer" style="padding: 0;">
-                    <div class="col-sm-6" style="border-right: 1px solid #dee2e6; padding: 1em 0;">
-                      <a class="message-del">YES</a>
+                <div class="d-flex list-transfer">
+                  <div class="row" style="width: 100%; margin: auto;">
+                    <div class="col-sm-5" style="padding: 0 6px;">
+                      <div class="py-2">
+                        <div class="d-flex justify-content-center transfer-table">
+                          <div class="number-table" style="width: 100%">
+                            <p>Ban so 1</p>
+                            <p>Trang thai:</p>
+                            <p>trong</p>
+                          </div>
+                          <div style="margin-top: 2.5em">
+                            <button type="button" class="btn btn-outline-dark bt-transfer" data-toggle="modal"
+                              data-target="#transfer">
+                              Chuyen
+                            </button>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center transfer-table">
+                          <div class="number-table" style="width: 100%">
+                            <p>Ban so 1</p>
+                            <p>Trang thai:</p>
+                            <p>trong</p>
+                          </div>
+                          <div style="margin-top: 2.5em">
+                            <button type="button" class="btn btn-outline-dark bt-transfer" data-toggle="modal"
+                              data-target="#transfer">
+                              Chuyen
+                            </button>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center transfer-table">
+                          <div class="number-table" style="width: 100%">
+                            <p>Ban so 1</p>
+                            <p>Trang thai:</p>
+                            <p>trong</p>
+                          </div>
+                          <div style="margin-top: 2.5em">
+                            <button type="button" class="btn btn-outline-dark bt-transfer" data-toggle="modal"
+                              data-target="#transfer">
+                              Chuyen
+                            </button>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center transfer-table">
+                          <div class="number-table" style="width: 100%">
+                            <p>Ban so 1</p>
+                            <p>Trang thai:</p>
+                            <p>trong</p>
+                          </div>
+                          <div style="margin-top: 2.5em">
+                            <button type="button" class="btn btn-outline-dark bt-transfer" data-toggle="modal"
+                              data-target="#transfer">
+                              Chuyen
+                            </button>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center transfer-table">
+                          <div class="number-table" style="width: 100%">
+                            <p>Ban so 1</p>
+                            <p>Trang thai:</p>
+                            <p>trong</p>
+                          </div>
+                          <div style="margin-top: 2.5em">
+                            <button type="button" class="btn btn-outline-dark bt-transfer" data-toggle="modal"
+                              data-target="#transfer">
+                              Chuyen
+                            </button>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center transfer-table">
+                          <div class="number-table" style="width: 100%">
+                            <p>Ban so 1</p>
+                            <p>Trang thai:</p>
+                            <p>trong</p>
+                          </div>
+                          <div style="margin-top: 2.5em">
+                            <button type="button" class="btn btn-outline-dark bt-transfer" data-toggle="modal"
+                              data-target="#transfer">
+                              Chuyen
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-sm-6" style="padding: 1em 0;">
-                      <a class="message-del" data-dismiss="modal" aria-label="Close">No</a>
+                    <div class="col-sm-7" style="padding: 0 6px;">
+                      <div class="py-2">
+                        <div class="d-flex justify-content-center transfer-table">
+                          <div class="number-table" style="width: 100%">
+                            <p>Ban so 1</p>
+                            <p>Ten: hung NV</p>
+                            <p>Trang thai: ton tai</p>
+                          </div>
+                          <div style="margin-top: 2.5em">
+                            <button type="button" class="btn btn-outline-dark bt-transfer">
+                              Chuyen
+                            </button>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center transfer-table">
+                          <div class="number-table" style="width: 100%">
+                            <p>Ban so 1</p>
+                            <p>Ten: hung NV</p>
+                            <p>Trang thai: ton tai</p>
+                          </div>
+                          <div style="margin-top: 2.5em">
+                            <button type="button" class="btn btn-outline-dark bt-transfer">
+                              Chuyen
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-              </div>
+              </div> -->
+              <!-- modal transfer seat ---------------------------------------------------------------------------- -->
+              <!-- <div
+                class="modal fade"
+                id="transfer"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="checkTransfer"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div
+                    class="modal-content"
+                    style="width: 60%; margin: 130px auto"
+                  >
+                    <div class="modal-body">
+                      <div class="row">
+                        <h3 class="mb-4">Thong bao</h3>
+                        <p class="mt-4">Ban co muon chuyen doi cho ngoi khong?</p>
+                      </div>
+                    </div>
+                    <div class="modal-footer" style="padding: 0">
+                      <div
+                        class="col-sm-6"
+                        style="border-right: 1px solid #dee2e6; padding: 1em 0"
+                      >
+                        <a class="message-del">YES</a>
+                      </div>
+                      <div class="col-sm-6" style="padding: 1em 0">
+                        <a
+                          class="message-del"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                          >No</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- end transfer -------------------------------------------------------------------------- -->
+            
             </div>
           </div>
-          <!-- end add -------------------------------------------------------------------------- -->
-
         </div>
       </main>
-
       <footer class="footer">
         <div class="container-fluid">
           <div class="row text-muted">
@@ -947,8 +601,68 @@
 <script>
 import HeaderEsc from "./Header.vue";
 import Sidebar from "./Sidebar.vue";
+import Seat from "./Seat.vue";
+import BlockRight from "./BlockRight.vue";
+import axios from 'axios'
 export default {
-  components: { Sidebar, HeaderEsc },
+  components: { Sidebar, HeaderEsc, Seat, BlockRight },
+  setup () {
+      // let blockAs = []
+      // const getBlock = async () => {
+      //   try {
+      //     const blockA = await axios.get('http://localhost:8080/v2/e2bf1d7a/testdata')
+      //     blockAs = blockA.data.data
+      //   } catch (error) {
+      //     console.log(error);
+      //   }
+      //   return []
+      // }
+      // blockAs = getBlock();
+      // console.log(11111, blockAs);
+      // return {
+      //   blockAs
+      // }
+  },
+  async created () {
+     this.getData();
+  },
+  data() {
+    return {
+      addActive: false,
+      isActive: true,
+      blockAs: [],
+      blockBs: [],
+      areaSeat: [],
+    };
+  },
+  methods: {
+    transferChange: function (ob)  {
+      this.addActive = true;
+      this.isActive = false;
+      this.areaSeat = ob;
+      console.log(123123, ob);
+    },
+    outTransfer: function () {
+      this.addActive = false;
+      this.isActive = true;
+    },
+    getData: async function() {
+      const blockA = await axios.get('http://localhost:8080/v2/e2bf1d7a/testdata')
+          this.blockAs = blockA.data.data[0]
+          this.blockBs = blockA.data.data[1]
+          console.log(1111, this.blockAs);
+    },
+    newUpdate: async function(newId) {
+      console.log(newId);
+       const changeSeat = await axios.get('http://localhost:8080/v2/e2bf1d7a/update', {
+         a: 1,
+       });
+       if(changeSeat == 'success'){
+         console.log(changeSeat);
+         this.getData();
+       }
+    }
+  },
 };
 </script>
 
@@ -956,7 +670,6 @@ export default {
 .content {
   margin-top: 10em;
 }
-
 .head-title {
   position: relative;
 }
@@ -965,62 +678,20 @@ export default {
   top: 0;
   right: 0;
 }
-.seat {
+.stage {
   border: 2px solid;
-  margin: 10px;
-  line-height: 15px;
-  font-weight: bolder;
-  width: 22%;
-}
-.seat:hover {
-  background: #1ea11a;
-}
-.check {
-  margin-top: 10px;
+  height: 200px;
+  width: 92%;
+  padding: 80px 0;
+  background: #faffba;
 }
 .set-table {
   margin: 2em 0;
 }
 
-.tool-tip {
-  position: relative;
-  display: inline-block;
+.mtop {
+  margin-top: 3em!important;
 }
-.tool-tip .tooltiptext {
-  visibility: hidden;
-  width: 220px;
-  background-color: #fff;
-  color: black;
-  text-align: left;
-  border-radius: 6px;
-  border: 2px solid;
-  padding: 0 10px 10px 10px;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 0%;
-  /* margin-left: -60px; */
-}
-.tool-tip:hover .tooltiptext {
-  visibility: visible;
-}
-.tool-tip .tooltip-head a {
-  color: black;
-}
-.tool-tip .tooltip-head a:hover {
-  color: blue;
-}
-.tool-tip .toolborder {
-  border-radius: 6px;
-  border: 2px solid;
-  padding: 10px;
-  font-weight: normal;
-}
-.tool-tip .toolborder p {
-  margin: 5px 0;
-}
-
 /* right */
 .cabinet {
   border: 2px solid;
@@ -1030,7 +701,9 @@ export default {
   padding: 90px 0;
   background: #7fd178;
 }
-
+.blockB .seat {
+  width: 30%;
+}
 /* left */
 .pantry-1 {
   border: 2px solid;
@@ -1068,20 +741,12 @@ export default {
   padding: 120px 0;
   background: #756f6f;
 }
-/* stage */
-.stage {
-  border: 2px solid;
-  height: 200px;
-  width: 92%;
-  padding: 80px 0;
-  background: #faffba;
-}
 
+/* modal */
 .list-user {
-  height: 370px;
+  height: 420px;
   overflow-y: scroll;
   border: 2px solid;
-  padding: 10px;
 }
 .add-user {
   border: 2px solid;
@@ -1096,5 +761,41 @@ export default {
   color: #000;
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
+}
+
+/* block right */
+.blockRight {
+  display: none;
+}
+.block-transfer {
+  border: 2px solid;
+  padding: 15px;
+  position: fixed;
+  display: block;
+}
+.list-transfer {
+  height: 380px;
+  overflow-y: scroll;
+  border: 2px solid;
+}
+.transfer-table {
+  height: 120px;
+  margin: 15px 0;
+}
+.transfer-table p {
+  height: 20px;
+}
+.number-table {
+  border: 2px solid;
+  margin-right: 6px;
+  line-height: 18px;
+  font-weight: bolder;
+  text-align: center;
+}
+.bt-transfer {
+  width: 40px;
+  height: 40px;
+  font-size: 10px;
+  padding: 0;
 }
 </style>
